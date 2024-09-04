@@ -109,7 +109,7 @@ main{
                 }
             }
 
-            & div:has(div.pet-name){
+            & .data{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -183,5 +183,37 @@ main{
 #night{
     & i{
         color: #756E1B;
+    }
+}
+@media ( 767px <= width <= 1024px ){
+    main{
+        padding: 3rem 1.25rem;
+        width: 100%;
+    }
+}
+
+@media (width <=760px){
+    main{
+       padding: 3rem 1.25rem;
+        & header{
+            flex-direction: column;
+        }
+        & .list{
+            max-width: 100%;
+            width: 100%;
+            & header{
+                flex-direction: row;
+            }
+             & .data{
+                flex-direction: column;
+
+                & .pet-name{
+                    & strong,span{
+                        font-size: 0.875rem;
+                        line-height: 1.5rem;
+                    }
+                }
+            }
+        }
     }
 }
