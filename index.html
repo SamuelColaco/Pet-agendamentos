@@ -20,16 +20,119 @@
                 <h1>Sua agenda</h1>
                 <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
             </div>
-            <div><input type="date"></div>
+            <div>
+                <i class="ph ph-calendar-blank"></i>
+                <input type="date">
+            </div>
         </header>
         <div class="list">
-            <div id="morning"></div>
-            <div id="afternoon"></div>
-            <div id="night"></div>
+            <div id="morning">
+                <header>
+                    <div>
+                        <i class="ph ph-sun-horizon"></i>
+                        <span>Manhã</span>
+                    </div>
+                    <div>
+                        <p>09h-12h</p>
+                    </div>
+                </header>
+
+                <div class="data">
+                    <div class="pet-name">
+                            <p>09:00</p>
+                            <p><strong>Thor</strong> <span>/ Fernanda Costa</span></p>
+                    </div>
+                    <div class="type">
+                            <p>Vacinação</p>
+                    </div>
+                    <div class="cancel">
+                            <span>Remover agendamento</span>
+                    </div>
+                </div>
+
+            </div>
+            <div id="afternoon">
+                <header>
+                    <div>
+                        <i class="ph ph-cloud-sun"></i>
+                        <span>Tarde</span>
+                    </div>
+                    <div>
+                        <p>13h-18h</p>
+                    </div>
+                </header>
+
+                <div class="data">
+                    <div class="pet-name">
+                            <p>13-00</p>
+                            <p><strong>Thor</strong> <span>/ Fernanda Costa</span></p>
+                    </div>
+                    <div class="type">
+                            <p>Vacinação</p>
+                    </div>
+                    <div class="cancel">
+                            <span>Remover agendamento</span>
+                    </div>
+                </div>
+
+                <div class="data">
+                    <div class="pet-name">
+                            <p>14-00</p>
+                            <p><strong>Thor</strong> <span>/ Fernanda Costa</span></p>
+                    </div>
+                    <div class="type">
+                            <p>Vacinação</p>
+                    </div>
+                    <div class="cancel">
+                            <span>Remover agendamento</span>
+                    </div>
+                </div>
+
+                <div class="data">
+                    <div class="pet-name">
+                            <p>17-00</p>
+                            <p><strong>Thor</strong> <span>/ Fernanda Costa</span></p>
+                    </div>
+                    <div class="type">
+                            <p>Vacinação</p>
+                    </div>
+                    <div class="cancel">
+                            <span>Remover agendamento</span>
+                    </div>
+                </div>
+        </div>
+
+        <div id="night">
+            <header>
+                <div>
+                    <i class="ph ph-moon-stars"></i>
+                    <span>Noite</span>
+                </div>
+                <div>
+                    <p>19h-21h</p>
+                </div>
+            </header>
+
+            <div class="data">
+                <div class="pet-name">
+                        <p>20:00</p>
+                        <p><strong>Thor</strong> <span>/ Fernanda Costa</span></p>
+                </div>
+                <div class="type">
+                        <p>Vacinação</p>
+                </div>
+                <div class="cancel">
+                        <span>Remover agendamento</span>
+                </div>
+            </div>
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <button>Novo agendamento</button>
+    </footer>
     
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </body>
 </html>
