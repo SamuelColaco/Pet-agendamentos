@@ -1,0 +1,31 @@
+
+
+footer{
+    text-align: right;
+    padding: 1rem;
+    & button{
+
+        background-color: var(--content-brand);
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        filter: drop-shadow();
+        border: 0;
+
+        text-transform: uppercase;
+        color: #050505;
+        font-family: "Inter", sans-serif;
+        font-weight: bold;
+        box-shadow: 0px 0px 40px rgba(146, 130, 250, 0.3);
+
+        letter-spacing: 0.01rem;
+        
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover{
+            background-color: #BDB4FA;
+            box-shadow: 0px 0px 70px rgba(146, 130, 250, 0.3);
+        }
+    }
+}
+
