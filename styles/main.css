@@ -1,0 +1,45 @@
+
+main{
+    & header{
+        display: flex;
+
+        gap: 1rem;
+        & div:has(h1){
+            display: flex;
+            flex-direction: column;
+
+            & h1{
+                font-size: 1.5rem;
+                line-height: 2rem;
+                color: var(--content-primary);
+    
+                font-family: "Inter Tight",sans-serif;
+            }
+            & p{
+                font-size: 0.875rem;
+                line-height: 1.5rem;
+                color: var(--content-secondary);
+            }
+        }
+
+        & div:has(input){
+            display: flex;
+            align-items: center;
+            & input{
+                padding: 0.75rem;
+                border-radius: 8px;
+        
+                color: var(--content-secondary);
+                border: 1px solid var(--bd-primary);
+                background-color: transparent;
+    
+                margin-left: 0.75rem;
+        
+            }
+
+        }
+
+        
+    }
+    
+}
