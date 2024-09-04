@@ -4,5 +4,36 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
+
+:root{
+    --content-primary: #FFFFFF;
+    --content-secondary: #98959D;
+    --content-tertiary: #666666;
+    --content-brand: #9282FA;
+
+    --bg-primary: #14151D;
+    --bg-secondary:#1E1E1E;
+    --bg-tertiary: #23242C;
+    --bg-brand: #9282FA;
+    --bg-highlight: #BDB4FA;
+
+    --bd-primary: #3E3C41;
+    --bd-secondary: #86818C;
+    --bd-brand: #9282FA;
+    --bd-divisor: #353339;
+}
+body{
+    background-color: var(--bg-primary);
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 5rem;
+}
+
 
