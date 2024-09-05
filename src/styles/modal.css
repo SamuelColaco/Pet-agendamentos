@@ -194,9 +194,31 @@
         display: none;
     }
 
-    &.show{
+    &.appear{
         display: initial;
     }
+}
 
+@media (width <=1024px){
+    #modal{
+        padding: 2.5rem;
+        height: 50rem;
 
+    }
+}
+
+@media (width <=760px){
+    #modal{
+        width: 22rem;
+        padding: 2rem;
+
+        height: 52rem;
+
+        & div:has(button){
+            & button{
+                padding-bottom: 2rem;
+            }
+
+        }
+    }
 }
