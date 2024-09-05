@@ -14,6 +14,8 @@
     <header>
         <img src="imgs/assets/logo.svg" alt="Logo mundo pet de cor roxa">
     </header>
+    
+
     <main>
         <header>
             <div>
@@ -131,6 +133,58 @@
     <footer>
         <button>Novo agendamento</button>
     </footer>
+
+
+    <div id="modal" class="hide">
+        <h2>Agende um atendimento</h2>
+        <p>Preencha os dados do cliente para realizar o agendamento:</p>
+
+        <form>
+            <fieldset>
+                <div>
+                    <label for="tutor">Nome do tutor</label>
+                    <i class="ph ph-user"></i>
+                    <input type="text" name="tutor" id="tutor" placeholder="Digite seu nome">
+                </div>
+                <div>
+                    <label for="pet">Nome do pet</label>
+                    <i class="ph ph-paw-print"></i>
+                    <input type="text" name="pet" id="pet" placeholder="Digite o nome do seu pet">
+                </div>
+                <div>
+                    <label for="tele">Telefone</label>
+                    <i class="ph ph-phone"></i>
+                    <input type="tel" name="tele" id="tele" placeholder="(00) 0 0000-000">
+                </div>
+                <div>
+                    <label for="service">Descrição do serviço</label>
+                    <textarea name="service" id="service">
+
+                    </textarea>
+                </div>
+            </fieldset>
+            <fieldset id="inputs">
+                <div>
+                    <label for="date">Data</label>
+                    <i class="ph ph-calendar-blank"></i>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div>
+                    <label for="hour">Hora</label>
+                    <i class="ph ph-clock"></i>
+                    <select name="hour" id="hour">
+                        <option value="nine">09:00</option>
+                        <option value="thirdteen">13:00</option>
+                        <option value="twelve">20:00</option>
+                    </select>
+                </div>
+
+            </fieldset>
+            <div>
+                <button type="submit">Agendar</button>
+            </div>
+        </form>
+    </div>
     
 
     <script src="https://unpkg.com/@phosphor-icons/web"></script>

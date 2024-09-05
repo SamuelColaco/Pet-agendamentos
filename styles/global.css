@@ -26,7 +26,6 @@
 }
 body{
     background-color: var(--bg-primary);
+    position: relative;
 }
-
-
 
