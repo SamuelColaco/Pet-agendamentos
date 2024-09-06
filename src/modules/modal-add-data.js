@@ -1,6 +1,7 @@
 
 import "./modal-open.js"
 import { send } from "./modal-open.js"
+import { value } from "./inputs-regex-validate.js"
 const form = document.querySelector("form")
 
     form.onsubmit = (event) =>{
@@ -14,6 +15,9 @@ const form = document.querySelector("form")
         const select = document.querySelector("select")
     
         
+        
+        value()
+
         const p1 = document.createElement("p")
         p1.textContent = select.value + ":00"
         console.log(p1)
