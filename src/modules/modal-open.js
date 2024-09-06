@@ -1,7 +1,7 @@
 
 const button = document.querySelector("footer  button")
 
-button.onclick = () => {
+export const send = button.onclick = () => {
     const modal = document.querySelector("#modal")
     const main = document.querySelector("main")
 
