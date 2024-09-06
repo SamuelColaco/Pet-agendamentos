@@ -15,7 +15,7 @@ const form = document.querySelector("form")
         const select = document.querySelector("select")
     
         
-        
+
         value()
 
         const p1 = document.createElement("p")
@@ -33,6 +33,7 @@ const form = document.querySelector("form")
         p3.textContent = service.value
         const span2 = document.createElement("span")
         span2.textContent = "Remover agendamento"
+        span2.classList.add("cancelDate")
 
 
         const petName= document.createElement("div")
