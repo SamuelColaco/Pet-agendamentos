@@ -46,6 +46,9 @@ const form = document.querySelector("form")
         type.append(p3)
         console.log(type)
 
+
+        
+
         const cancel = document.createElement("div")
         cancel.classList.add("cancel")
         cancel.append(span2)

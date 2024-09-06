@@ -14,5 +14,6 @@ import "./modules/modal-open.js"
 import "./modules/modal-add-data.js"
 import "./modules/delete-date.js"
 
+import "./modules/date-value.js"
 
 
