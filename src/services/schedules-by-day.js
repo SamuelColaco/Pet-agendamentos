@@ -11,7 +11,7 @@ export async function scheduleByDay({ date }) {
 
         const data =  await response.json()
 
-        const dailySchedule = data.filter((schedules) => dayjs(date).isSame(schedules.when, "day"))
+        const dailySchedule = data.filter((schedules) => dayjs(date).isSame(schedules.date, "day"))
 
         return dailySchedule
 

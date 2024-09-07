@@ -15,16 +15,18 @@ const form = document.querySelector("form")
         const pet = document.querySelector("#pet").value
         const tel = document.querySelector("#tele")
         const service = document.querySelector("#service")
+        const date = document.querySelector("#date").value
     
         const select = document.querySelector("select")
 
-        
+
+        const selectedDate = document.querySelector('main header div input[type = "date"]')
         
         value()
-
+        const hour = dayjs().format("HH")
         const nameOwner = owner.value
         const id = new Date().getTime()
-        const when = dayjs()
+        const when = dayjs(selectedDate.value).add(hour,"hour")
 
         console.log(nameOwner)
         console.log(when)
@@ -35,6 +37,7 @@ const form = document.querySelector("form")
             id,
             nameOwner,
             pet,
+            date,
             when
         })
     

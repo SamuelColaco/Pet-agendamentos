@@ -16,5 +16,6 @@ import "./modules/delete-date.js"
 
 import "./modules/date-value.js"
 import "./modules/load.js"
+import "./modules/selected-date-change.js"
 
 
