@@ -2,9 +2,12 @@
 import "./modal-open.js"
 import { send } from "./modal-open.js"
 import { value } from "./inputs-regex-validate.js"
+import dayjs from "dayjs"
+import { scheduleNew } from "../services/schedule-new.js"
+
 const form = document.querySelector("form")
 
-    form.onsubmit = (event) =>{
+    form.onsubmit =  async (event) =>{
         event.preventDefault()
 
         const owner = document.querySelector("#tutor")
@@ -13,10 +16,18 @@ const form = document.querySelector("form")
         const service = document.querySelector("#service")
     
         const select = document.querySelector("select")
-    
-        
 
+        
+        
         value()
+        
+        const nameOwner = owner.value
+        const id = new Date().getTime()
+        const when = dayjs()
+
+        console.log(nameOwner)
+        console.log(when)
+        console.log(id)
 
         const p1 = document.createElement("p")
         p1.textContent = select.value + ":00"
@@ -48,6 +59,7 @@ const form = document.querySelector("form")
 
 
         
+        
 
         const cancel = document.createElement("div")
         cancel.classList.add("cancel")
@@ -72,8 +84,15 @@ const form = document.querySelector("form")
         else{
             night.append(data)
         }
+        
+        await scheduleNew({
+            id,
+            nameOwner,
+            when
+        })
 
         send()
+
 
 
 }
