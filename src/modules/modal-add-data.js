@@ -4,9 +4,7 @@ import { send } from "./modal-open.js"
 import { value } from "./inputs-regex-validate.js"
 import dayjs from "dayjs"
 import { scheduleNew } from "../services/schedule-new.js"
-import { scheduleByDay } from "../services/schedules-by-day.js"
-
-import { addData } from "../services/api-add-in-form.js"
+import { load } from "./load.js"
 
 const form = document.querySelector("form")
 
@@ -19,7 +17,6 @@ const form = document.querySelector("form")
         const service = document.querySelector("#service")
     
         const select = document.querySelector("select")
-        const selectedDate = document.querySelector('main header div input[ type = "date"]')
 
         
         
@@ -40,15 +37,11 @@ const form = document.querySelector("form")
             pet,
             when
         })
-
-        const date = selectedDate.value
-
-        const daily = await scheduleByDay({ date })
-        console.log(daily)
-    
-        addData({ daily })
     
         send()
+
+        location.reload()
+
 
 
 

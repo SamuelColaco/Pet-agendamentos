@@ -15,5 +15,6 @@ import "./modules/modal-add-data.js"
 import "./modules/delete-date.js"
 
 import "./modules/date-value.js"
+import "./modules/load.js"
 
 
