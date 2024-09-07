@@ -1,7 +1,7 @@
 
 import { apiConfig } from "./api-config";
 
-export async function scheduleNew({id, nameOwner, when }) {
+export async function scheduleNew({id, nameOwner,pet, when }) {
     try {
         
         await fetch(`${apiConfig.baseURL}/schedules`,{
@@ -10,11 +10,9 @@ export async function scheduleNew({id, nameOwner, when }) {
                 "Content-type": "application/json"
             },
 
-            body: JSON.stringify({id, nameOwner, when}),
+            body: JSON.stringify({id, nameOwner,pet, when}),
 
         })
-
-        
         
         alert("Agendamento feito")
     } catch (error) {
