@@ -21,7 +21,7 @@ export const load = document.onload = () =>{
 }
 
 export async function scheduleDay() {
-    const date = dateValue
+    const date = selectedDate.value
 
     const daily = await scheduleByDay({ date })
     console.log(daily)

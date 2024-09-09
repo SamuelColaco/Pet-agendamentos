@@ -13,12 +13,12 @@ const form = document.querySelector("form")
 
         const owner = document.querySelector("#tutor")
         const pet = document.querySelector("#pet").value
-        const tel = document.querySelector("#tele")
-        const service = document.querySelector("#service")
+        const tel = document.querySelector("#tele").value
+        const service = document.querySelector("#service").value
         const date = document.querySelector("#date").value
     
         const select = document.querySelector("select")
-
+        
 
         const selectedDate = document.querySelector('main header div input[type = "date"]')
         
@@ -38,6 +38,8 @@ const form = document.querySelector("form")
             nameOwner,
             pet,
             date,
+            tel,
+            service,
             when
         })
     

@@ -1,7 +1,7 @@
 
 import { apiConfig } from "./api-config";
 
-export async function scheduleNew({id, nameOwner,pet,date, when }) {
+export async function scheduleNew({id, nameOwner,pet,date,tel,service, when }) {
     try {
         
         await fetch(`${apiConfig.baseURL}/schedules`,{
@@ -10,7 +10,7 @@ export async function scheduleNew({id, nameOwner,pet,date, when }) {
                 "Content-type": "application/json"
             },
 
-            body: JSON.stringify({id, nameOwner,pet, date, when}),
+            body: JSON.stringify({id, nameOwner,pet, date,tel, service, when}),
 
         })
         
