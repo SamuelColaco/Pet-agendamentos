@@ -10,6 +10,7 @@ export const cancel2 = document.addEventListener("click",  async (event)=>{
         console.log(id)
 
         await scheduleDeleteDate({ id })
+        location.reload()
         
     }
 })

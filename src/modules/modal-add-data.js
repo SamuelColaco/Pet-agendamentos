@@ -25,7 +25,7 @@ const form = document.querySelector("form")
         value()
         const hour = dayjs().format("HH")
         const nameOwner = owner.value
-        const id = new Date().getTime()
+        const id = new Date().getTime().toString()
         const when = dayjs(selectedDate.value).add(hour,"hour")
 
         console.log(nameOwner)

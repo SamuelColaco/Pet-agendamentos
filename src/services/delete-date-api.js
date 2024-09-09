@@ -6,6 +6,7 @@ export async function scheduleDeleteDate({ id }) {
     try {
         await fetch(`${apiConfig.baseURL}/schedules/${id}`,{
             method: "DELETE",
+            cache: "no-store"
         })
         
 

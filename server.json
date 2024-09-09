@@ -1,13 +1,3 @@
 {
-  "schedules": [
-    {
-      "id": 1725907987004,
-      "nameOwner": "Rodrigo",
-      "pet": "Juka",
-      "date": "2024-09-13",
-      "tel": "83945367865",
-      "service": "aeae",
-      "when": "2024-09-09T18:00:00.000Z"
-    }
-  ]
+  "schedules": []
 }
