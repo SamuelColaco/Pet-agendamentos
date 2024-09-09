@@ -51,6 +51,7 @@ export function addData({daily}) {
             
             const data = document.createElement("div")
             data.classList.add("data")
+            data.setAttribute("data-id", schedules.id)
             data.append(petName,type,cancel)
             console.log(data)
 
