@@ -14,7 +14,7 @@ export function addData({daily}) {
             value()
             
             const p1 = document.createElement("p")
-            p1.textContent = dayjs(schedules.when).format("HH") + ":00"
+            p1.textContent = Number(schedules.select) === 9  ? "0"+ Number(schedules.select) + ":00"  :  Number(schedules.select) + ":00"
             console.log(p1)
             const strong = document.createElement("strong")
             strong.textContent = schedules.pet
@@ -57,7 +57,7 @@ export function addData({daily}) {
 
             
             
-            const hour = dayjs(schedules.when).hour()
+            const hour = Number(schedules.select)
             
             if(hour < 13){
                 morning.append(data)

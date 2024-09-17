@@ -17,7 +17,7 @@ const form = document.querySelector("form")
         const service = document.querySelector("#service").value
         const date = document.querySelector("#date").value
     
-        const select = document.querySelector("select")
+        const select = document.querySelector("select").value
         
 
         const selectedDate = document.querySelector('main header div input[type = "date"]')
@@ -40,6 +40,7 @@ const form = document.querySelector("form")
             date,
             tel,
             service,
+            select,
             when
         })
     
